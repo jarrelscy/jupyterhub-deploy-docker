@@ -70,7 +70,7 @@ c.JupyterHub.db_url = 'postgresql://postgres:{password}@{host}/{db}'.format(
 
 # Whitlelist users and admins
 c.Authenticator.whitelist = whitelist = set()
-c.Authenticator.admin_users = admin = set(['jarrelscy'])
+c.Authenticator.admin_users = admin = set()
 c.JupyterHub.admin_access = True
 pwd = os.path.dirname(__file__)
 with open(os.path.join(pwd, 'userlist')) as f:
